@@ -1,3 +1,4 @@
+/*eslint-disable no-console*/
 // Variáveis e tipos de dados
 let nome = "João"; // String
 let idade = 25; // Number

@@ -15,4 +15,4 @@ console.log(saudacao("João")); // Exibe: Olá, João!
     ligar() {
         console.log(`${this.marca} ${this.modelo} está ligado.`);
     }
-}
+};

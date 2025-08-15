@@ -1,0 +1,31 @@
+instalar postgresql no ubuntu 20.04
+
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo systemctl start postgresql
+
+Como construir uma API simples em Go que interage com um banco de dados (usando PostgreSQL como exemplo, mas o princípio vale para MySQL, SQLite, etc.).
+
+Estrutura:
+meu-api-go/
+├── go.mod          # Arquivo de módulo Go
+├── main.go         # Ponto de entrada
+├── handlers/       # Lógica das rotas
+│   └── user.go
+├── models/         # Definições de dados
+│   └── user.go
+└── database/       # Conexão com DB
+    └── db.go
+
+Apos instalar o Golang na maquina, inciar o projeto no terminal:
+
+go mod init meu-api-go
+
+Instalar pacotes de necessidade:
+
+go get github.com/gorilla/mux   # Router HTTP
+go get github.com/lib/pq        # Driver PostgreSQL
+
+Instalar o .env para go:
+ go get github.com/joho/godotenv
+
