@@ -35,7 +35,7 @@ let funcionario: { nome: string; idade: number; isAdmin?: boolean } = {
   idade: 25,
 }; // object com propriedade opcional (isAdmin?)
 // Interfaces em Typescript são usadas para definir a estrutura de um objeto. Elas são semelhantes aos tipos, mas são mais flexíveis e podem ser estendidas.
-interface Produto {
+export interface Produto {
   nome: string;
   preco: number;
   descricao?: string; // propriedade opcional   
