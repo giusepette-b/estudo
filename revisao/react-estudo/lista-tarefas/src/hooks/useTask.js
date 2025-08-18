@@ -21,14 +21,16 @@ export const useTasks = () => {
     return true;
   };
 
-  const editTask = (index, newText) => {
-    if (newText.trim() === '' || tasks.includes(newText)) {
-      return false;
-    }
-    const updatedTasks = tasks.map((task, i) => (i === index ? newText : task));
-    setTasks(updatedTasks);
-    return true;
-  };
+ const editTask = (index, newText) => {
+  if (newText.trim() === '' || tasks.includes(newText)) {
+    return false;
+  }
+  const updatedTasks = tasks.map((task, i) => 
+    i === index ? newText : task
+  );
+  setTasks(updatedTasks);
+  return true;
+};
 
 const removeTask = (index) => {
   setTasks(prevTasks => prevTasks.filter((_, i) => i !== index));

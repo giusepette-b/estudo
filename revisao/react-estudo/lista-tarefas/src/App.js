@@ -15,10 +15,11 @@ const App = () => {
     removeTask
   } = useTasks();
 
-  const handleEdit = (e, index) => {
-    e.preventDefault();
+  const handleEdit = (index) => {
     const newTask = prompt('Editar tarefa:', tasks[index]);
-    if (newTask) editTask(index, newTask);
+    if (newTask !== null && newTask.trim() !== '') {
+      editTask(index, newTask.trim());
+    }
   };
 
   return (
@@ -38,5 +39,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;
