@@ -1,0 +1,86 @@
+.main {
+    background-color: rgb(172, 208, 214);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.2em;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.forn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit:hover {
+    background-color: #0056b3;
+}
+
+.edit {
+    color: #28a745;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.edit:hover {
+    color: #218838;
+}
+.remove {
+    color: #dc3545;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.remove:hover {
+    color: #c82333;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    border-bottom: 1px solid #ccc;
+}
+.task-list li:hover {
+    background-color: #e2e1b1;
+    transition: background-color 0.3s ease;
+}
+.task-list li span {
+    display: flex;
+    gap: 10px;
+}
+.task-list li div svg:hover {
+    color: #255fa1;
+}   
+.task-list li:last-child {
+    border-bottom: none;
+}

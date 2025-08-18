@@ -1,0 +1,9 @@
+.task-counter {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+}

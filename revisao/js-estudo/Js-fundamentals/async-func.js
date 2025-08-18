@@ -1,5 +1,5 @@
 //Funções assincrônicas em JavaScript são usadas para lidar com operações que podem levar algum tempo para serem concluídas, como requisições de rede ou leitura de arquivos.
-async function buscarDados(url) {
+export async function buscarDados(url) {
     try {
         let resposta = await fetch(url); // Espera pela resposta da requisição
         if (!resposta.ok) {

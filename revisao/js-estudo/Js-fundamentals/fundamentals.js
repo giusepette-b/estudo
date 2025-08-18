@@ -115,11 +115,13 @@ let condicao = (a > b) ? "A é maior que B" : "B é maior ou igual a A"; // Oper
 // Javascript é uma linguagem de programação orientada a objetos, baseada em protótipos. Isso significa que os objetos podem herdar propriedades e métodos de outros objetos.
 // Objetos podem ser criados usando a notação de objeto literal, construtores de função, ou classes (a partir do ES6).
 // Exemplo de criação de objeto usando notação de objeto literal
-let carro = {
+export let carro = {
     marca: "Toyota",
     modelo: "Corolla",
     ano: 2020,
     ligar: function() {
         console.log("Carro ligado");
     }
+
+ 
 };
